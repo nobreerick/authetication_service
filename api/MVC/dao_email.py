@@ -1,6 +1,6 @@
-from .model_tables import BaseEmail
-from .model_email import Email
-from .controller_db import DBConfig
+from MVC.model_tables import BaseEmail
+from MVC.model_email import Email
+from MVC.controller_db import DBConfig
 
 class DaoEmail:
 

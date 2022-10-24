@@ -1,6 +1,6 @@
-from .model_tables import BaseUser
-from .model_user import User
-from .controller_db import DBConfig
+from MVC.model_tables import BaseUser
+from MVC.model_user import User
+from MVC.controller_db import DBConfig
 
 class DaoUser:
 

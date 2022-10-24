@@ -1,6 +1,6 @@
-from .model_tables import BaseAdress
-from .model_adress import Adress
-from .controller_db import DBConfig
+from MVC.model_tables import BaseAdress
+from MVC.model_adress import Adress
+from MVC.controller_db import DBConfig
 
 class DaoAdress:
 

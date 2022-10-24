@@ -1,6 +1,6 @@
-from .model_tables import BasePhone
-from .model_phone import Phone
-from .controller_db import DBConfig
+from MVC.model_tables import BasePhone
+from MVC.model_phone import Phone
+from MVC.controller_db import DBConfig
 
 class DaoPhone:
 

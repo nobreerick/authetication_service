@@ -1,4 +1,4 @@
-from .controller_db import DBConfig
+from MVC.controller_db import DBConfig
 from sqlalchemy import Column, Integer, String, DATE, ForeignKey, Boolean
 from sqlalchemy.ext.declarative import declarative_base
 

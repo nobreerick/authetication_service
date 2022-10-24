@@ -1,11 +1,11 @@
-from .model_tables import BasePerson
-from .model_person import Person
-from .controller_db import DBConfig
+from MVC.model_tables import BasePerson
+from MVC.model_person import Person
+from MVC.controller_db import DBConfig
 
 class DaoPerson:
 
     @classmethod
-    def insert_person(cls, Person: Person, user_id, email_id, phone_id, adress_id):
+    def insert_person(cls, Person: Person, user_id: int, email_id: int, phone_id: int, adress_id: int):
         
         session = DBConfig.return_session(DBConfig.return_engine())
         
@@ -21,7 +21,7 @@ class DaoPerson:
         session.commit()
 
     @classmethod
-    def update_person(cls, Person: Person, person_id):
+    def update_person(cls, Person: Person, person_id: int):
 
         session = DBConfig.return_session(DBConfig.return_engine())
 
@@ -34,7 +34,7 @@ class DaoPerson:
         session.commit()
 
     @classmethod
-    def delete_person(cls, person_id):
+    def delete_person(cls, person_id: int):
         session = DBConfig.return_session(DBConfig.return_engine())
 
         session.query(BasePerson).filter(BasePerson.id == person_id).delete()
